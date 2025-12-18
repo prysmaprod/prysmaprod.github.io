@@ -336,6 +336,18 @@
     }
     .social-link:hover { color: #E1306C; } /* Color Instagram */
 
+    /* === FINAL LOGO === */
+    .final-logo {
+      display: flex; justify-content: center; align-items: center;
+      padding: 60px 24px 20px; /* Espacio arriba y abajo antes del footer */
+    }
+    .final-logo img {
+      max-width: 250px; /* Tamaño grande pero estético */
+      width: 100%; height: auto;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+
     /* Utilities */
     .fade-in-section{opacity:0; transform:translateY(20px); transition:all .6s ease;}
     .fade-in-section.is-visible{opacity:1; transform:translateY(0);}
@@ -624,6 +636,11 @@
       </div>
     </section>
 
+    <!-- LOGO FINAL CENTRADO -->
+    <div class="final-logo fade-in-section">
+      <img src="https://raw.githubusercontent.com/prysmaprod/prysmaprod.github.io/main/Prysma%203.png" alt="Prysma Producciones">
+    </div>
+
   </main>
 
   <!-- FOOTER ACTUALIZADO: Instagram -->
@@ -644,7 +661,7 @@
   
   <div class="sticky-cta">
      <a href="#contacto" class="btn btn-primary">Cotizar</a>
-     <a href="https://wa.me/573001112233" class="btn btn-ghost">WhatsApp (respuesta rápida)</a>
+     <a href="https://wa.me/3189072719" class="btn btn-ghost">WhatsApp (respuesta rápida)</a>
   </div>
 
   <script>
@@ -739,7 +756,8 @@
         return;
       }
       const text = `Hola Prysma, soy ${data.nombre}. Quiero cotizar un evento para el ${data.fecha}. Detalles: ${data.detalles}. Mi correo es ${data.email}`;
-      const url = `https://wa.me/573001112233?text=${encodeURIComponent(text)}`;
+      // Actualizado número de WhatsApp
+      const url = `https://wa.me/3189072719?text=${encodeURIComponent(text)}`;
       window.open(url, '_blank');
     }
 
